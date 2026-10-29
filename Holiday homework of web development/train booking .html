@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Booking System</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #263238;
+      background: #f3f7f6;
+    }
+
+    header, footer {
+      padding: 18px;
+      color: white;
+      background: #12343b;
+      text-align: center;
+    }
+
+    nav {
+      padding: 12px;
+      background: #f2b705;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #12343b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 35px 15px;
+      color: white;
+      background: #1b4a52;
+      text-align: center;
+    }
+
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    section, article {
+      margin-bottom: 20px;
+      padding: 20px;
+      background: white;
+    }
+
+    h2, h3 {
+      color: #12343b;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 9px;
+      border: 1px solid #aab8ba;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      border: 1px solid #d5dddd;
+      text-align: left;
+    }
+
+    th {
+      background: #e8efee;
+    }
+
+    @media (max-width: 500px) {
+      nav a {
+        display: inline-block;
+        margin: 5px;
+      }
+
+      th, td {
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <h1>Travel Booking System</h1>
+    <p>A simple bus and train travel page</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#booking">Booking Details</a>
+    <a href="#buses">Bus Services</a>
+    <a href="#trains">Train Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Plan your next journey</h2>
+    <p>Enter your travel details and view our sample bus and train schedules.</p>
+  </div>
+
+  <main>
+    <section id="booking">
+      <h2>Booking Details</h2>
+      <p>This is a student project demo. It displays sample schedules but does not book tickets.</p>
+
+      <label for="transport">Type of transport</label>
+      <select id="transport">
+        <option>Bus</option>
+        <option>Train</option>
+      </select>
+
+      <label for="source">From</label>
+      <input type="text" id="source" placeholder="For example, Hyderabad">
+
+      <label for="destination">To</label>
+      <input type="text" id="destination" placeholder="For example, Chennai">
+
+      <label for="date">Journey date</label>
+      <input type="date" id="date">
+
+      <label for="passengers">Number of passengers</label>
+      <select id="passengers">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+    </section>
+
+    <section id="buses">
+      <h2>Sample Bus Services</h2>
+      <article>
+        <h3>Express Star</h3>
+        <p>Departure: 06:00 AM | Arrival: 02:00 PM | Duration: 8 hours</p>
+        <p>Price per ticket: &#8377;650</p>
+      </article>
+      <article>
+        <h3>Night Rider</h3>
+        <p>Departure: 09:30 PM | Arrival: 06:30 AM | Duration: 9 hours</p>
+        <p>Price per ticket: &#8377;800</p>
+      </article>
+      <article>
+        <h3>City Link AC</h3>
+        <p>Departure: 01:00 PM | Arrival: 08:30 PM | Duration: 7 hours 30 minutes</p>
+        <p>Price per ticket: &#8377;720</p>
+      </article>
+    </section>
+
+    <section id="trains">
+      <h2>Sample Train Services</h2>
+      <article>
+        <h3>Coastal Express</h3>
+        <p>Departure: 07:15 AM | Arrival: 03:45 PM | Duration: 8 hours 30 minutes</p>
+        <p>Price per ticket: &#8377;420</p>
+      </article>
+      <article>
+        <h3>Southern Superfast</h3>
+        <p>Departure: 05:40 PM | Arrival: 05:10 AM | Duration: 11 hours 30 minutes</p>
+        <p>Price per ticket: &#8377;560</p>
+      </article>
+      <article>
+        <h3>Intercity Special</h3>
+        <p>Departure: 10:00 AM | Arrival: 06:00 PM | Duration: 8 hours</p>
+        <p>Price per ticket: &#8377;380</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Seat Information</h2>
+      <p>Seat selection and ticket booking are not available in this HTML and CSS demo.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: help@travelbooking.example</p>
+      <p>Phone: +91 00000 00000 (sample number)</p>
+      <p>Office: College Project Lab, Block A</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Travel Booking System - Student demonstration project</p>
+  </footer>
+</body>
+</html>

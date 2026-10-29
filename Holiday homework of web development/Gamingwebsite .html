@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArenaX - Gaming & Esports</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0e17;
+            color: white;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        header {
+            background: #141927;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #a8ff3e;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: #191f35;
+        }
+
+        .hero span, .points, footer span {
+            color: #a8ff3e;
+        }
+
+        .button {
+            display: inline-block;
+            background: #a8ff3e;
+            color: #10140b;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 25px 8%;
+        }
+
+        section h2 {
+            color: #a8ff3e;
+            text-align: center;
+        }
+
+        .games, .news {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card, .news-card {
+            background: #171d2b;
+            padding: 18px;
+            flex: 1 1 220px;
+        }
+
+        .card h3, .news-card h3 {
+            color: #a8ff3e;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #293148;
+            padding: 4px 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #171d2b;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #293148;
+        }
+
+        th {
+            background: #a8ff3e;
+            color: #10140b;
+        }
+
+        footer {
+            text-align: center;
+            background: #141927;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 20px 5%;
+            }
+
+            th, td {
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ARENAX</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#games">Games</a>
+            <a href="#tournaments">Tournaments</a>
+            <a href="#players">Players</a>
+            <a href="#leaderboard">Leaderboard</a>
+            <a href="#news">News</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div class="hero" id="home">
+        <h2>PLAY HARD. RISE <span>HIGHER.</span></h2>
+
+        <p>
+            Your ultimate destination for gaming,
+            esports tournaments, and competitive rankings.
+        </p>
+
+        <a href="#tournaments" class="button">
+            Explore Tournaments
+        </a>
+    </div>
+
+    <!-- Featured Games -->
+    <section id="games">
+        <h2>Featured Games</h2>
+
+        <div class="games">
+
+            <div class="card">
+                <h3>Valorant</h3>
+                <p>
+                    Experience tactical combat, teamwork,
+                    and competitive FPS action.
+                </p>
+                <span class="tag">Tactical FPS</span>
+            </div>
+
+            <div class="card">
+                <h3>League of Legends</h3>
+                <p>
+                    Build strategies, master champions,
+                    and dominate the battlefield.
+                </p>
+                <span class="tag">MOBA</span>
+            </div>
+
+            <div class="card">
+                <h3>Counter-Strike 2</h3>
+                <p>
+                    Test your aim, teamwork, and tactical
+                    skills in competitive matches.
+                </p>
+                <span class="tag">FPS</span>
+            </div>
+
+            <div class="card">
+                <h3>Clash of Clans</h3>
+                <p>
+                    Build your village, train your army,
+                    and compete with other clans.
+                </p>
+                <span class="tag">Strategy</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tournaments -->
+    <section id="tournaments">
+        <h2>Upcoming Tournaments</h2>
+
+        <div class="games">
+
+            <div class="card">
+                <h3>ArenaX Valorant Open</h3>
+                <p>Date: 26 October 2026</p>
+                <p>Format: 5v5</p>
+                <p>Prize Pool: $5,000</p>
+                <span class="tag">Registration Open</span>
+            </div>
+
+            <div class="card">
+                <h3>Summoner's Clash</h3>
+                <p>Date: 29 October 2026</p>
+                <p>Format: Team Competition</p>
+                <p>Game: League of Legends</p>
+                <span class="tag">Upcoming</span>
+            </div>
+
+            <div class="card">
+                <h3>Counter-Strike Night Cup</h3>
+                <p>Date: 2 November 2026</p>
+                <p>Format: 5v5</p>
+                <p>Game: Counter-Strike 2</p>
+                <span class="tag">Upcoming</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Player Profiles -->
+    <section id="players">
+        <h2>Top Players</h2>
+
+        <div class="games">
+
+            <div class="card">
+                <h3>Nyx</h3>
+                <p>Game: Valorant</p>
+                <p>Role: Duelist</p>
+                <p>Country: India</p>
+            </div>
+
+            <div class="card">
+                <h3>Razor</h3>
+                <p>Game: Counter-Strike 2</p>
+                <p>Role: AWPer</p>
+                <p>Rating: 1.36</p>
+            </div>
+
+            <div class="card">
+                <h3>Lux</h3>
+                <p>Game: League of Legends</p>
+                <p>Role: Mid Lane</p>
+                <p>Rank: Top 0.5%</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section id="leaderboard">
+        <h2>Team Leaderboard</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Team</th>
+                    <th>Game</th>
+                    <th>Wins</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nova Core</td>
+                    <td>Valorant</td>
+                    <td>42</td>
+                    <td class="points">2840</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Phantom Five</td>
+                    <td>Counter-Strike 2</td>
+                    <td>38</td>
+                    <td class="points">2610</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Rift Reapers</td>
+                    <td>League of Legends</td>
+                    <td>35</td>
+                    <td class="points">2420</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Neon Wolves</td>
+                    <td>Valorant</td>
+                    <td>31</td>
+                    <td class="points">2190</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Iron Protocol</td>
+                    <td>Counter-Strike 2</td>
+                    <td>28</td>
+                    <td class="points">1970</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Gaming News -->
+    <section id="news">
+        <h2>Latest Gaming News</h2>
+
+        <div class="news">
+
+            <div class="news-card">
+                <h3>ArenaX Open Announced</h3>
+                <p>
+                    Get ready for competitive action as
+                    teams prepare for the upcoming tournament.
+                </p>
+            </div>
+
+            <div class="news-card">
+                <h3>Build Your Esports Team</h3>
+                <p>
+                    Discover teammates, improve communication,
+                    and compete together.
+                </p>
+            </div>
+
+            <div class="news-card">
+                <h3>Community Spotlight</h3>
+                <p>
+                    Explore the growing esports community
+                    and celebrate talented players.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 ArenaX Gaming Community.
+            All rights reserved.
+        </p>
+
+        <p>Built for gamers, by gamers.</p>
+    </footer>
+
+</body>
+</html>
